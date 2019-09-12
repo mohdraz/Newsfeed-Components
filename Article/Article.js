@@ -96,6 +96,28 @@ const data = [
     secondParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
 
     thirdParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`
+  },
+
+  {
+    title: 'My Second Article',
+    date: 'Sep 12, 2019',
+
+    firstParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`
+  },
+
+  {
+    title: 'This is the third and final article and I am loving it',
+    date: 'Sep 12, 2019',
+
+    firstParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`
   }
 ];
 
