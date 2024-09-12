@@ -85,8 +85,42 @@ const data = [
     thirdParagraph: `Hodor hodor - hodor... Hodor hodor hodor hodor. Hodor. Hodor! Hodor hodor, hodor hodor hodor hodor hodor; hodor hodor? Hodor!
           Hodor hodor, HODOR hodor, hodor hodor?! Hodor! Hodor hodor, HODOR hodor, hodor hodor, hodor, hodor hodor. Hodor, hodor.
           Hodor. Hodor, hodor, hodor. Hodor hodor... Hodor hodor hodor?! Hodor, hodor... Hodor hodor HODOR hodor, hodor hodor. Hodor.`
+  },
+
+  {
+    title: 'This is my professional first blog in Lamda',
+    date: 'Sep 12, 2019',
+
+    firstParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`
+  },
+
+  {
+    title: 'My Second Article',
+    date: 'Sep 12, 2019',
+
+    firstParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`
+  },
+
+  {
+    title: 'This is the third and final article and I am loving it',
+    date: 'Sep 12, 2019',
+
+    firstParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    secondParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`,
+
+    thirdParagraph: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque quo aut magni perspiciatis impedit corrupti quibusdam incidunt voluptas! Hic, possimus.`
   }
 ];
+
 
 /* Step 1: Create a function that creates a component. You will want your component to look like the template below: 
   
@@ -103,11 +137,69 @@ const data = [
 
   Your function should take either an object as it's one argument, or 5 separate arguments mapping to each piece of the data object above.
 
-  Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.
+  */
 
-  Step 3: return the entire component.
+  function createArticle (articleInfo) {
 
-  Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div.
+  // create elements 
+  const card = document.createElement('div');
+  const heading = document.createElement('h2');
+  const date  = document.createElement('p');
+  const p1 = document.createElement('p');
+  const p2 = document.createElement('p');
+  const p3 = document.createElement('p');
+  const spanButton = document.createElement('span');
+
+  // append elements 
+  articles.appendChild(card);
+  card.appendChild(heading);
+  card.appendChild(date);
+  card.appendChild(p1);
+  card.appendChild(p2);
+  card.appendChild(p3);
+  card.appendChild(spanButton);
+
+  // apply styles 
+
+  card.classList.add('article');
+  date.classList.add('date');
+  spanButton.classList.add('expandButton');
+
+  // apply content
+
+  heading.textContent = articleInfo.title;
+  date.textContent = articleInfo.date;
+  p1.textContent = articleInfo.firstParagraph;
+  p2.textContent = articleInfo.secondParagraph;
+  p3.textContent = articleInfo.thirdParagraph;
+  spanButton.textContent = 'expand more';
+
+
+  /*
+
+  Step 2: Add an event listener to the expandButton span. This event listener should toggle the class 'article-open' on the 'article' div.  */
+
+  spanButton.addEventListener('click', (e) => {
+    card.classList.toggle('article-open');
+  })
+
+  
+  /*
+
+  Step 3: return the entire component.  */
+
+  return card;
+
+  }
+  /*
+  Step 4: Map over the data, creating a component for each oject and add each component to the DOM as children of the 'articles' div. */
+
+  const articles = document.querySelector('.articles');
+  data.forEach( data => {
+    articles.appendChild(createArticle(data));
+  })
+
+  /*
 
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
